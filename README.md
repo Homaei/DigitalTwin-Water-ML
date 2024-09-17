@@ -10,7 +10,7 @@ We implemented a digital twin system that collects data from various sources, su
 
 Below is a preview of the Digital Twin system diagram:
 
-![Digital Twin Diagram](./images/Digital_Twins.png)
+![Digital Twin Diagram](./Digital_Twins.png)
 
 ## Project Structure
 
