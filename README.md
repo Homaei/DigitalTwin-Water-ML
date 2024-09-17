@@ -4,13 +4,13 @@
 
 This project focuses on forecasting water consumption using machine learning (ML) and artificial intelligence (AI) models, leveraging data from **Digital Twins** implemented for various villages in Spain. Digital Twins provide daily real-time and historical data for water consumption, allowing for accurate predictions and enhanced resource management.
 
-We implemented a digital twin system that collects data from various sources such as water meters, meteorology stations, and programmable logic controllers (PLCs). The data is then processed using AI/ML models to predict water consumption and detect leakages.
+We implemented a digital twin system that collects data from various sources, such as water meters, meteorology stations, and programmable logic controllers (PLCs). The data is then processed using AI/ML models to predict water consumption and detect leakages.
 
 ## Digital Twin Diagram
 
-For a detailed overview of the digital twin architecture, you can refer to the diagram below:
+Below is a preview of the Digital Twin system diagram:
 
-[View Digital Twin PDF](./Digital_Twins.pdf)
+![Digital Twin Diagram](./images/Digital_Twins.png)
 
 ## Project Structure
 
