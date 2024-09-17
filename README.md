@@ -1,6 +1,4 @@
-# Writing the README.md content to a file
 
-readme_content = """
 # Water Consumption Forecasting Using Digital Twins and AI/ML
 
 ## Overview
