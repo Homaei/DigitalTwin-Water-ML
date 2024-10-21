@@ -61,28 +61,26 @@ Below is a preview of the Digital Twin system diagram:
 
   - **Meteorological Data**: Collected from meteorological stations to improve prediction accuracy. We evaluated the relationship between different parameters and water consumption using the Pearson correlation method. Our analysis revealed that maximum temperature positively correlates with water consumption. The results of this correlation analysis are presented in the following figure.
 ![image](https://github.com/user-attachments/assets/36b6d5cd-4fb2-47a8-92ab-b8370d4297e0)
-
 ![image](https://github.com/user-attachments/assets/ff28496e-721b-4df8-b719-55f2f1782ec0)
-
-
-
-
 
   
 - **Main Features**:
   - **Water Consumption Prediction**: AI and ML models, including **LSTM** and **Prophet**, are used for forecasting daily water usage.
   - **Leakage Detection**: Early detection of water leakages by analyzing consumption patterns.
-  - **Energy Consumption and CO2 Footprint**: Monitoring the energy impact of water distribution and associated CO2 emissions.
+  - **Energy Consumption and CO2 Footprint**: Monitoring the energy impact of water distribution and associated CO2 emissions (These parameters result from maintaining the water distribution network). For example, each operator has several tasks with a variety of time, location, priority, and other metrics, and the scheduling with preemption (Urgent tasks) is an NP-hard problem.
+ ![image](https://github.com/user-attachments/assets/2139cd4d-e107-4197-abf5-494f3db7bacb)
+
+
 
 - **Pre-Processing and AI/ML Pipeline**:
   The project follows a well-defined data pipeline that includes:
   - **Pre-processing Stage**: Data cleaning, normalization, and preparation for analysis.
   - **Analysis Stage**: Applying models like LSTM and Prophet for time series forecasting.
-  - **Post-Processing Stage**: Interpretation of the model outputs to provide actionable insights regarding water consumption and leakage detection.
+  - **Post-Processing Stage**: Interpret the model outputs to provide actionable insights regarding water consumption and leakage detection.
 
 ## Project Workflow
 
-1. **Data Input**: Collection of historical and real-time water consumption data and meteorological data.
+1. **Data Input**: Collecting historical and real-time water consumption and meteorological data.
 2. **Pre-Processing**: Cleaning and preparing the data for machine learning models.
 3. **AI/ML Processing**: Applying LSTM and Prophet models to predict future water consumption and detect anomalies such as leakages.
 4. **Output**: Predictions and analytics related to water usage, energy consumption, and environmental impact.
