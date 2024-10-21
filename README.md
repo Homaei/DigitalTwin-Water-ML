@@ -32,15 +32,18 @@ Below is a preview of the Digital Twin system diagram:
 
 ## Project Workflow
 
-1. **Data Input**: Collection of historical and real-time water consumption data along with meteorological data.
-2. **Pre-Processing**: Cleaning and preparation of the data for machine learning models.
+1. **Data Input**: Collection of historical and real-time water consumption data and meteorological data.
+2. **Pre-Processing**: Cleaning and preparing the data for machine learning models.
 3. **AI/ML Processing**: Applying LSTM and Prophet models to predict future water consumption and detect anomalies such as leakages.
 4. **Output**: Predictions and analytics related to water usage, energy consumption, and environmental impact.
 
 ## Models Used
 
-- **LSTM (Long Short-Term Memory)**: Used for time-series forecasting, particularly effective in handling sequential data.
-- **Prophet**: A model designed for forecasting time series data, especially when the data exhibits strong seasonal effects.
+- **LSTM (Long Short-Term Memory)**
+- **Prophet**
+- **XGBoost**
+- **LightGBM**
+- **Ensemble of XGBoost and LightGBM**
 
 ## Technologies
 
@@ -56,7 +59,7 @@ Below is a preview of the Digital Twin system diagram:
      ```
 
 2. **Run the Jupyter Notebook**:
-   - The core of the project is contained in the Jupyter notebook `Water_Consumption_Forecasting.ipynb`. Open it to explore the data and model workflow:
+   - The project's core is in the Jupyter notebook `Water_Consumption_Forecasting.ipynb`. Open it to explore the data and model workflow:
      ```
      jupyter notebook Water_Consumption_Forecasting.ipynb
      ```
