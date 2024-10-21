@@ -131,7 +131,7 @@ Below is a preview of the Digital Twin system diagram:
 
 ## Contributors
 
-- [Homaei], [@omogollo ] 
+- [Homaei](https://github.com/homaei), [@omogollo ] 
   
 ## License
 
