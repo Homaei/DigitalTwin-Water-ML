@@ -60,7 +60,7 @@ Below is a preview of the Digital Twin system diagram:
 ![image](https://github.com/user-attachments/assets/ffd428b4-6ce2-424d-ac28-13b9f2f56db5)
 
   - **Meteorological Data**: Collected from meteorological stations to improve prediction accuracy. We evaluated the relationship between different parameters and water consumption using the Pearson correlation method. Our analysis revealed that maximum temperature positively correlates with water consumption. The results of this correlation analysis are presented in the following figure.
-    ![image](https://github.com/user-attachments/assets/36b6d5cd-4fb2-47a8-92ab-b8370d4297e0)
+![image](https://github.com/user-attachments/assets/36b6d5cd-4fb2-47a8-92ab-b8370d4297e0)
 
 ![image](https://github.com/user-attachments/assets/ff28496e-721b-4df8-b719-55f2f1782ec0)
 
