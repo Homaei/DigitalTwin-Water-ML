@@ -53,11 +53,11 @@ Below is a preview of the Digital Twin system diagram:
 
 - **Data Sources**:
   - **Historical Water Consumption Data**: Collected from sensors and databases over time.
- ![image](https://github.com/user-attachments/assets/1aca6b3a-c02e-4af3-8424-8c388523554e)
+![image](https://github.com/user-attachments/assets/1aca6b3a-c02e-4af3-8424-8c388523554e)
 
     
-  - **Real-time Water Consumption Data**: Continuously monitored and collected daily.
-
+  - **Real-time Water Consumption Data**: Continuously monitored and collected daily. This data is captured every 8 hours from water meters in the village. 
+![image](https://github.com/user-attachments/assets/ffd428b4-6ce2-424d-ac28-13b9f2f56db5)
 
   - **Meteorological Data**: Collected from meteorological stations to improve prediction accuracy. We evaluated the relationship between different parameters and water consumption using the Pearson correlation method. Our analysis revealed that maximum temperature positively correlates with water consumption. The results of this correlation analysis are presented in the following figure.
     ![image](https://github.com/user-attachments/assets/36b6d5cd-4fb2-47a8-92ab-b8370d4297e0)
