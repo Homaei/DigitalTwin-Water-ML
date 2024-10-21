@@ -53,8 +53,19 @@ Below is a preview of the Digital Twin system diagram:
 
 - **Data Sources**:
   - **Historical Water Consumption Data**: Collected from sensors and databases over time.
+ ![image](https://github.com/user-attachments/assets/1aca6b3a-c02e-4af3-8424-8c388523554e)
+
+    
   - **Real-time Water Consumption Data**: Continuously monitored and collected daily.
+
+
   - **Meteorological Data**: Sourced from meteorology stations to enhance the accuracy of the predictions.
+![image](https://github.com/user-attachments/assets/ff28496e-721b-4df8-b719-55f2f1782ec0)
+
+
+
+
+
   
 - **Main Features**:
   - **Water Consumption Prediction**: AI and ML models, including **LSTM** and **Prophet**, are used for forecasting daily water usage.
