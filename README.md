@@ -1,12 +1,15 @@
 # Water Consumption Forecasting Using Digital Twins and AI/ML
 
 ## Overview
+This project focuses on leveraging machine learning (ML) and artificial intelligence (AI) models for water consumption forecasting, using data collected through **Digital Twins** implemented across various villages in Spain. By providing real-time and historical data, these Digital Twins enable more accurate predictions and optimized resource management. 
 
-This project focuses on forecasting water consumption using machine learning (ML) and artificial intelligence (AI) models, leveraging data from **Digital Twins** implemented for various villages in Spain. Digital Twins provide daily real-time and historical data for water consumption, allowing for accurate predictions and enhanced resource management.
+Our digital twin system aggregates data from water meters, meteorological stations, and programmable logic controllers (PLCs). It analyzes this data using AI/ML models to forecast water consumption and detect possible leaks, thereby improving overall efficiency in water resource management.
 
-We implemented a digital twin system that collects data from various sources, such as water meters, meteorology stations, and programmable logic controllers (PLCs). The data is then processed using AI/ML models to predict water consumption and detect leakages.
+Accurate water consumption forecasting is vital for effective resource management, infrastructure planning, and sustainability. This report compares various time series forecasting models for predicting water consumption over 6-month and 18-month horizons. The models include traditional statistical methods, like the Prophet model with custom seasonalities and regressors, and more advanced machine learning approaches like XGBoost, LightGBM, and LSTM neural networks.
 
+We applied advanced feature engineering to improve predictive performance, incorporating lag features, rolling statistics, and domain-specific variables such as maximum temperature and day of the week. Both Prophet and LSTM models were optimized through hyperparameter tuning, including techniques like dropout layers, learning rate adjustments, and stacking ensemble methods.
 
+The five top-performing models for the 6-month and 18-month forecasts were evaluated using key performance metrics, including Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and Mean Absolute Percentage Error (MAPE). The following sections present the detailed results.
 
 
 | No | Model                                                                                          | 6 M MAE | 6 M RMSE | 6 M MAPE | 18 M MAE | 18 M RMSE | 18 M MAPE |
@@ -16,6 +19,29 @@ We implemented a digital twin system that collects data from various sources, su
 | 3 😊 | Prophet Adv. Engineering                                                                        | 6.21    | 8.75     | 20.61%   | 10.12    | 17.02     | 21.43%    |
 | 4 😊 | Advanced Prophet                                                                                | 6.24    | 8.78     | 20.77%   | 11.14    | 18.02     | 22.34%    |
 | 5 😊 | LSTM Rolling Mean Features                                                                      | 7.94    | 10.82    | 27.59%   | 12.33    | 20.57     | 24.67%    |
+
+These results underscore the effectiveness of combining feature engineering, hyperparameter tuning, and advanced machine learning techniques to improve water consumption forecasting accuracy. The models also demonstrated robust performance in the 18-month forecasts, showcasing their versatility across different forecasting horizons.
+
+
+| No | Model                                                                                          | 6 M MAE | 6 M RMSE | 6 M MAPE | 18 M MAE | 18 M RMSE | 18 M MAPE |
+|----|------------------------------------------------------------------------------------------------|---------|----------|----------|----------|-----------|-----------|
+| 1  | Prophet Basic                                                                                  | 10.37   | 13.66    | 22.45%   | 19.70    | 28.68     | 22.45%    |
+| 2  | Prophet + Seasonality                                                                           | 12.39   | 14.91    | 22.45%   | 24.25    | 35.02     | 22.45%    |
+| 3  | Advanced Prophet                                                                                | **6.24**    | **8.78**     | **20.77%**   | **11.14**    | **18.02**     | **22.34%**    |
+| 4  | **Prophet Adv. Engineering**                                                                    | **6.21**| **8.75** | **20.61%**| **10.12**| **17.02** | **21.43%**|
+| 5  | XGBoost                                                                                         | 7.02    | 8.74     | 24.93%   | 12.34    | 18.50     | 27.49%    |
+| 6  | **LightGBM**                                                                                    | **5.90**| **8.25** | **19.64%**| **11.77**| **18.31**     | **24.98%**    |
+| 7  | Stacking XGBoost + LightGBM                                                                     | 6.57    | 8.70     | 22.45%   | 12.48    | 18.94     | 27.62%    |
+| 8  | LSTM Network                                                                                    | 7.31    | 10.74    | 22.43%   | 16.03    | 22.16     | 39.95%    |
+| 9  | LSTM Hyperparameter Tuning                                                                      | 6.51    | 9.61     | 21.34%   | 12.72    | 20.61     | 26.47%    |
+| 10 | **LSTM Hyper. Tuning Plus**                                                                     | **5.96**| **9.38** | **18.64%**| **12.63**| **20.66**     | **25.61%**    |
+| 11 | LSTM Hyper. Tuning Changed Params                                                               | 6.52    | 9.63     | 21.38%   | 13.33    | 20.60     | 29.21%    |
+| 12 | LSTM + GRU Hybrid                                                                               | 8.18    | 10.10    | 30.10%   | 14.64    | 22.32     | 34.06%    |
+| 13 | **LSTM Rolling Mean Features**                                                                  | **7.94**| **10.82**    | **27.59%**| **12.33**| **20.57**     | **24.67%**    |
+
+
+
+
 
 ## Digital Twin Diagram
 
