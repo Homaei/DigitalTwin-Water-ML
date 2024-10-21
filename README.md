@@ -87,11 +87,22 @@ Below is a preview of the Digital Twin system diagram:
 
 ## Models Used
 
-- **LSTM (Long Short-Term Memory)**
-- **Prophet**
-- **XGBoost**
-- **LightGBM**
-- **Ensemble of XGBoost and LightGBM**
+| No | Main Method | Algorithm Name                   | Differences/Parameters                                                                 |
+|----|-------------|----------------------------------|----------------------------------------------------------------------------------------|
+| 1  | Prophet     | Prophet Basic                    | Basic model, no additional seasonality or regressors                                   |
+|    |             | Prophet + Seasonality            | Includes seasonality components (e.g., yearly or weekly)                               |
+|    |             | Advanced Prophet                 | Includes advanced features like holidays, added regressors                             |
+|    |             | Prophet Adv. Engineering         | Custom feature engineering (lag, rolling means, etc.)                                  |
+| 2  | LSTM        | LSTM Basic                       | Vanilla LSTM, no additional tuning or feature engineering                              |
+|    |             | LSTM Hyperparameter Tuning       | LSTM with tuned hyperparameters (e.g., learning rate, units)                           |
+|    |             | LSTM + GRU Hybrid                | Combination of LSTM and GRU layers for better generalization                           |
+|    |             | LSTM Rolling Mean Features       | LSTM with rolling mean features for smoother predictions                               |
+| 3  | XGBoost     | XGBoost Basic                    | Basic XGBoost model without additional feature engineering                             |
+|    |             | XGBoost with Feature Engineering | XGBoost with advanced feature engineering (lag, etc.)                                  |
+| 4  | LightGBM    | LightGBM Basic                   | Basic LightGBM model, no feature engineering                                           |
+|    |             | LightGBM with Feature Engineering| LightGBM with engineered features (e.g., lags, moving averages)                        |
+| 5  | Stacking    | Stacking XGBoost + LightGBM      | Ensemble of XGBoost and LightGBM, stacking the models                                  |
+
 
 ## Technologies
 
