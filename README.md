@@ -91,7 +91,7 @@ Below is a preview of the Digital Twin system diagram:
 |----|-------------|----------------------------------|----------------------------------------------------------------------------------------|
 | 1  | Prophet     | Prophet Basic                    | Basic model, no additional seasonality or regressors                                   |
 |    |             | Prophet + Seasonality            | Includes seasonality components (e.g., yearly or weekly)                               |
-|    |             | Advanced Prophet                 | Includes advanced features like holidays, added regressors                             |
+|    |             | Advanced Prophet                 | Includes advanced features like holidays added regressors                             |
 |    |             | Prophet Adv. Engineering         | Custom feature engineering (lag, rolling means, etc.)                                  |
 | 2  | LSTM        | LSTM Basic                       | Vanilla LSTM, no additional tuning or feature engineering                              |
 |    |             | LSTM Hyperparameter Tuning       | LSTM with tuned hyperparameters (e.g., learning rate, units)                           |
