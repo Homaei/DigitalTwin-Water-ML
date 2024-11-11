@@ -1,15 +1,61 @@
 # Water Consumption Forecasting Using Digital Twins and AI/ML
 
 ## Overview
-This project focuses on leveraging machine learning (ML) and artificial intelligence (AI) models for water consumption forecasting, using data collected through **Digital Twins** implemented across various villages in Spain. By providing real-time and historical data, these Digital Twins enable more accurate predictions and optimized resource management. 
 
-Our digital twin system aggregates data from water meters, meteorological stations, and programmable logic controllers (PLCs). It analyzes this data using AI/ML models to forecast water consumption and detect possible leaks, thereby improving overall efficiency in water resource management.
+This project leverages **Digital Twin** technology along with advanced **Machine Learning (ML)** and **Artificial Intelligence (AI)** models to accurately forecast water consumption across multiple rural villages in Spain. By integrating real-time and historical data collected by Digital Twins, we aim to support effective resource management, optimize infrastructure planning, and enhance sustainability.
 
-Accurate water consumption forecasting is vital for effective resource management, infrastructure planning, and sustainability. This report compares various time series forecasting models for predicting water consumption over 6-month and 18-month horizons. The models include traditional statistical methods, like the Prophet model with custom seasonalities and regressors, and more advanced machine learning approaches like XGBoost, LightGBM, and LSTM neural networks.
+### Digital Twin System
 
-We applied advanced feature engineering to improve predictive performance, incorporating lag features, rolling statistics, and domain-specific variables such as maximum temperature and day of the week. Both Prophet and LSTM models were optimized through hyperparameter tuning, including techniques like dropout layers, learning rate adjustments, and stacking ensemble methods.
+Our **Digital Twin** setup collects data from multiple sources:
 
-The five top-performing models for the 6-month and 18-month forecasts were evaluated using key performance metrics, including Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), and Mean Absolute Percentage Error (MAPE). The following sections present the detailed results.
+- **Water Meters**: Capture regular water usage data.
+- **Meteorological Stations**: Provide weather data, helping identify correlations with water consumption.
+- **Programmable Logic Controllers (PLCs)**: Monitor and control the water distribution system for improved operational efficiency.
+
+This data is aggregated and processed through ML and AI models to forecast water consumption and detect anomalies. By identifying unusual patterns early, we enable timely responses to leaks, reducing waste and supporting efficient water usage.
+
+### Importance of Water Consumption Forecasting
+
+Accurate water forecasting is crucial for managing finite water resources, supporting infrastructure planning, and enhancing sustainability. The benefits of a robust forecasting model include:
+
+1. **Improved Resource Management**: Predictions allow for optimized supply, minimizing waste and cost.
+2. **Better Infrastructure Decisions**: Insights from forecasts support maintenance and expansion prioritization.
+3. **Enhanced Sustainability**: By aligning distribution with demand, we conserve energy and reduce environmental impacts.
+
+### Forecasting Models and Methodologies
+
+The project evaluates several models for water consumption forecasting over 6-month and 18-month horizons, comparing traditional and advanced ML methods:
+
+1. **Prophet Model**: A time series forecasting model designed for seasonality, holidays, and custom regressors, tailored for periodic consumption changes.
+2. **XGBoost and LightGBM**: Efficient and accurate boosted tree algorithms, further improved with custom feature engineering.
+3. **LSTM Neural Networks**: Long Short-Term Memory networks, ideal for capturing long-sequence dependencies essential in forecasting water trends.
+
+### Feature Engineering
+
+Advanced feature engineering techniques were applied to enhance predictive accuracy:
+
+- **Lag Features**: Integrate past consumption data to capture temporal patterns.
+- **Rolling Statistics**: Use rolling means, standard deviations, and max values to smooth out short-term fluctuations.
+- **Domain-Specific Variables**: Incorporate factors like maximum daily temperature and day of the week, significantly impacting water usage.
+
+### Hyperparameter Tuning
+
+We fine-tuned each model to optimize performance:
+
+- **Prophet Model**: Tuned seasonality, added holiday effects, and custom regressors.
+- **LSTM Model**: Adjusted dropout rates, learning rates, sequence length, and layer units through grid and randomized search.
+- **Stacking Ensemble Methods**: Combined outputs from XGBoost and LightGBM models to increase robustness by capturing different aspects of the data.
+
+### Model Evaluation Metrics
+
+Each model was evaluated on the following metrics to identify top performers across 6-month and 18-month forecasting periods:
+
+1. **Mean Absolute Error (MAE)**: Average error magnitude in predictions.
+2. **Root Mean Squared Error (RMSE)**: Provides a higher penalty for large prediction errors.
+3. **Mean Absolute Percentage Error (MAPE)**: Standardized error measurement as a percentage for cross-model comparison.
+
+Based on these metrics, the best models for each forecasting period are presented in the following sections.
+
 
 
 | No | Model                                                                                          | 6 M MAE | 6 M RMSE | 6 M MAPE | 18 M MAE | 18 M RMSE | 18 M MAPE |
