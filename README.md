@@ -171,10 +171,11 @@ The objective is to develop an optimized schedule that minimizes completion time
 
 To solve this problem, we formulated a **Constraint Programming (CP) model** that accounts for deterministic parameters, aiming to:
 
-1. **Minimize Total Completion Time** \((C_{\text{max}})\)
-2. **Minimize Total Fuel Consumption** \((F_{\text{total}})\)
-3. **Minimize Total CO₂ Emissions** \((C_{\text{total}})\)
-4. **Minimize Delays and Penalties** for high-priority tasks \((D_{\text{total}})\)
+1. **Minimize Total Completion Time** $$(C_{\text{max}})$$
+2. **Minimize Total Fuel Consumption** $$(F_{\text{total}})$$
+3. **Minimize Total CO₂ Emissions** $$(C_{\text{total}})$$
+4. **Minimize Delays and Penalties** for high-priority tasks $$(D_{\text{total}})$$
+
 
 ### Model Components
 
