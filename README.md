@@ -155,17 +155,17 @@ Below is a preview of the Digital Twin system diagram:
 
 ## Overview
 
-In rural Water Distribution Networks (WDNs), operators face the challenge of efficiently routing and scheduling maintenance tasks across vast areas with varied priorities and dependencies. These tasks often rely on operators’ judgment, leading to inefficiencies, especially when handling simultaneous tasks with differing priorities. This project addresses these challenges by developing a systematic approach to optimize routing and scheduling, thereby reducing operational costs, such as travel time, fuel consumption, and CO₂ emissions.
+In rural Water Distribution Networks (WDNs), operators face the challenge of efficiently routing and scheduling maintenance tasks across vast areas with varied priorities and dependencies. These tasks often rely on operators’ judgment, which can lead to inefficiencies, especially when handling simultaneous tasks with differing priorities. This project addresses these challenges by developing a systematic approach to optimize routing and scheduling, thereby reducing operational costs, such as travel time, fuel consumption, and CO₂ emissions.
 
 ### Problem Description
 
 The maintenance scheduling in WDNs is modeled as a complex **Single Machine Scheduling** problem with preemptive tasks, variable release times, and task dependencies. This problem is NP-hard and involves several constraints, including:
 
 - **Task Prioritization**: Tasks are assigned different priorities, requiring high-priority tasks to be addressed promptly.
-- **Emergency Tasks**: High-priority emergency tasks can arrive at any time and must be incorporated into the existing schedule, often with penalties for delays.
+- **Emergency Tasks**: High-priority emergency tasks can arrive at any time and need to be incorporated into the existing schedule, often with penalties for delays.
 - **Task Dependencies**: Some tasks are dependent on the completion of others, which must be respected to avoid operational conflicts.
 
-The objective is to develop an optimized schedule that minimizes completion time, fuel consumption, CO₂ emissions, and task delays while ensuring efficient task handling and respecting dependencies and preemptions.
+The objective is to develop an optimized schedule that minimizes completion time, fuel consumption, CO₂ emissions, and task delays, while ensuring efficient handling of tasks and respecting dependencies and preemptions.
 
 ### Mathematical Model and Objectives
 
@@ -176,21 +176,20 @@ To solve this problem, we formulated a **Constraint Programming (CP) model** tha
 3. **Minimize Total CO₂ Emissions** $$(C_{\text{total}})$$
 4. **Minimize Delays and Penalties** for high-priority tasks $$(D_{\text{total}})$$
 
-
 ### Model Components
 
 The model includes various sets, indices, parameters, decision variables, and constraints:
 
 - **Sets and Indices**:
-  - \( T \): Set of all tasks
-  - \( D \): Set of task dependencies, where a dependency \((i, j)\) indicates task \(j\) must follow task \(i\)
+  - $$T$$: Set of all tasks
+  - $$D$$: Set of task dependencies, where a dependency $$(i, j)$$ indicates task $$j$$ must follow task $$i$$
 
 - **Parameters**:
-  - \( p_i \): Processing time for each task \(i\)
-  - \( d_{ij} \): Travel time between tasks \(i\) and \(j\)
-  - \( f_i \): Fuel consumption for each task \(i\)
-  - \( c_i \): CO₂ emissions for each task \(i\)
-  - \( r_i \): Release time for task \(i\) (emergency tasks have \( r_i \geq 0 \))
+  - $$p_i$$: Processing time for each task $$i$$
+  - $$d_{ij}$$: Travel time between tasks $$i$$ and $$j$$
+  - $$f_i$$: Fuel consumption for each task $$i$$
+  - $$c_i$$: CO₂ emissions for each task $$i$$
+  - $$r_i$$: Release time for task $$i$$ (emergency tasks have $$r_i \geq 0$$)
 
 - **Decision Variables**:
   - **Task Scheduling Variables**: Define start and end times for each task or segment.
@@ -201,23 +200,23 @@ The model includes various sets, indices, parameters, decision variables, and co
 
 The overall objective function is a weighted sum of the various components we aim to minimize:
 
-\[
+$$
 \min Z = w_t \times (C_{\text{max}} - S) + w_f \times F_{\text{total}} + w_c \times C_{\text{total}} + w_d \times D_{\text{total}}
-\]
+$$
 
 where:
-- \( w_t, w_f, w_c, w_d \) are the weights for completion time, fuel, CO₂ emissions, and delays.
-- \( C_{\text{max}} \): Completion time of the last task.
-- \( F_{\text{total}} \): Total fuel consumed.
-- \( C_{\text{total}} \): Total CO₂ emissions.
-- \( D_{\text{total}} \): Total delays for emergency tasks.
+- $$w_t, w_f, w_c, w_d$$ are the weights for completion time, fuel, CO₂ emissions, and delays.
+- $$C_{\text{max}}$$: Completion time of the last task.
+- $$F_{\text{total}}$$: Total fuel consumed.
+- $$C_{\text{total}}$$: Total CO₂ emissions.
+- $$D_{\text{total}}$$: Total delays for emergency tasks.
 
 ### Constraints
 
 To ensure the model functions effectively within operational limits, we included several constraints:
 
 1. **Processing Time**: Total scheduled processing time for each task matches its required time.
-2. **Precedence for Dependencies**: If task \(j\) depends on task \(i\), task \(j\) cannot start until task \(i\) completes.
+2. **Precedence for Dependencies**: If task $$j$$ depends on task $$i$$, task $$j$$ cannot start until task $$i$$ completes.
 3. **Non-Overlap Constraint**: Ensures no overlap in tasks on a single machine.
 4. **Work Hours**: Tasks are scheduled within defined working hours.
 5. **Emergency Task Release Times**: Emergency tasks cannot start before their release time.
@@ -252,21 +251,6 @@ Below are visual representations of key metrics analyzed in the model:
 ![Efficiency and Utilization](src/Efficiency%20and%20Utilization.png)
 
 ---
-
-This section provides an in-depth look at the **Water Distribution System (WDS) Maintenance Optimization** model and its benefits over conventional methods, offering a systematic and effective approach to WDS scheduling.
-
-
-
-
-![Completion Time](src/Completion%20Time.png)
-![Delay and Penalties](src/Delay%20and%20Penalties.png)
-![Fuel Consumption](src/Fuel%20Consumption.png)
-![CO2 Emissions](src/CO2%20Emissions.png)
-![Efficiency and Utilization](src/Efficiency%20and%20Utilization.png)
-
-
-
-
 
 
 
