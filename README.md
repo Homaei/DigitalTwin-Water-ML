@@ -104,6 +104,22 @@ Below is a preview of the Digital Twin system diagram:
 | 5  | Stacking    | Stacking XGBoost + LightGBM      | Ensemble of XGBoost and LightGBM, stacking the models                                  |
 
 
+
+# Water Distribution System maintenance
+
+
+
+![CO2 Emissions](src/CO2%20Emissions.png)
+![Completion Time](src/Completion%20Time.png)
+![Delay and Penalties](src/Delay%20and%20Penalties.png)
+![Efficiency and Utilization](src/Efficiency%20and%20Utilization.png)
+![Fuel Consumption](src/Fuel%20Consumption.png)
+
+
+
+
+
+
 ## Technologies
 
 - **Digital Twins**: Simulating the water consumption of villages in Spain, providing a virtual representation for better decision-making and forecasting.
