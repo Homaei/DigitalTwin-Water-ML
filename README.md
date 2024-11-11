@@ -91,7 +91,7 @@ Below is a preview of the Digital Twin system diagram:
 |----|-------------|----------------------------------|----------------------------------------------------------------------------------------|
 | 1  | Prophet     | Prophet Basic                    | Basic model, no additional seasonality or regressors                                   |
 |    |             | Prophet + Seasonality            | Includes seasonality components (e.g., yearly or weekly)                               |
-|    |             | Advanced Prophet                 | Includes advanced features like holidays added regressors                             |
+|    |             | Advanced Prophet                 | Includes advanced features like holidays added regressors                              |
 |    |             | Prophet Adv. Engineering         | Custom feature engineering (lag, rolling means, etc.)                                  |
 | 2  | LSTM        | LSTM Basic                       | Vanilla LSTM, no additional tuning or feature engineering                              |
 |    |             | LSTM Hyperparameter Tuning       | LSTM with tuned hyperparameters (e.g., learning rate, units)                           |
@@ -102,18 +102,20 @@ Below is a preview of the Digital Twin system diagram:
 | 4  | LightGBM    | LightGBM Basic                   | Basic LightGBM model, no feature engineering                                           |
 |    |             | LightGBM with Feature Engineering| LightGBM with engineered features (e.g., lags, moving averages)                        |
 | 5  | Stacking    | Stacking XGBoost + LightGBM      | Ensemble of XGBoost and LightGBM, stacking the models                                  |
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Water Distribution System Maintenance
 
 
 
-# Water Distribution System maintenance
 
-
-
-![CO2 Emissions](src/CO2%20Emissions.png)
 ![Completion Time](src/Completion%20Time.png)
 ![Delay and Penalties](src/Delay%20and%20Penalties.png)
-![Efficiency and Utilization](src/Efficiency%20and%20Utilization.png)
 ![Fuel Consumption](src/Fuel%20Consumption.png)
+![CO2 Emissions](src/CO2%20Emissions.png)
+![Efficiency and Utilization](src/Efficiency%20and%20Utilization.png)
+
 
 
 
