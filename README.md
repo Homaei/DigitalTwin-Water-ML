@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project leverages **Digital Twin** technology along with advanced **Machine Learning (ML)** and **Artificial Intelligence (AI)** models to accurately forecast water consumption across multiple rural villages in Spain. By integrating real-time and historical data collected by Digital Twins, we aim to support effective resource management, optimize infrastructure planning, and enhance sustainability.
+This project leverages **Digital Twin** technology, advanced **Machine Learning (ML)**, and **Artificial Intelligence (AI)** models to accurately forecast water consumption across multiple rural villages in Spain. By integrating real-time and historical data collected by Digital Twins, we aim to support effective resource management, optimize infrastructure planning, and enhance sustainability.
 
 ### Digital Twin System
 
