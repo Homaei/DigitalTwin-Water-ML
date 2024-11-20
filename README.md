@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project leverages **Digital Twin** technology, advanced **Machine Learning (ML)**, and **Artificial Intelligence (AI)** models to accurately forecast water consumption across multiple rural villages in Spain. By integrating real-time and historical data collected by Digital Twins, we aim to support effective resource management, optimize infrastructure planning, and enhance sustainability.
+This project leverages **Digital Twin** technology, advanced **Machine Learning (ML)**, and **Artificial Intelligence (AI)** models to accurately forecast water consumption across multiple rural villages in Spain. We aim to support effective resource management, optimize infrastructure planning, and enhance sustainability by integrating real-time and historical data Digital Twins collects.
 
 ### Digital Twin System
 
@@ -12,9 +12,9 @@ Our **Digital Twin** setup collects data from multiple sources:
 - **Meteorological Stations**: Provide weather data, helping identify correlations with water consumption.
 - **Programmable Logic Controllers (PLCs)**: Monitor and control the water distribution system for improved operational efficiency.
 
-This data is aggregated and processed through ML and AI models to forecast water consumption and detect anomalies. By identifying unusual patterns early, we enable timely responses to leaks, reducing waste and supporting efficient water usage.
+This data is aggregated and processed through ML and AI models to forecast water consumption and detect anomalies. By identifying unusual patterns early, we enable timely responses to leaks, reduce waste, and support efficient water usage.
 
-### Importance of Water Consumption Forecasting
+### Importance of Water Consumption Forecasting 
 
 Accurate water forecasting is crucial for managing finite water resources, supporting infrastructure planning, and enhancing sustainability. The benefits of a robust forecasting model include:
 
