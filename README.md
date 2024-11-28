@@ -88,12 +88,13 @@ These results underscore the effectiveness of combining feature engineering, hyp
 
 
 
-
+Prophet model's results:
 
 ![FIG10-A-Prophet Model with Advanced Feature Engineering 6m](https://github.com/user-attachments/assets/79376d28-8b70-4b35-af8b-a9557cb700d8)
-
+Figure 4:  Prophet Model with Advanced Feature Engineering 6 months forecasting
 
 ![FIG10-B-Prophet Model with Advanced Feature Engineering 18m](https://github.com/user-attachments/assets/f2d7c49e-13db-4428-aa2b-9526ff639bf5)
+Figure 5:  Prophet Model with Advanced Feature Engineering 18 months forecasting
 
 
 ## Digital Twin Diagram
