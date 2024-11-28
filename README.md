@@ -60,11 +60,11 @@ Based on these metrics, the best models for each forecasting period are presente
 
 | No | Model                                                                                          | 6 M MAE | 6 M RMSE | 6 M MAPE | 18 M MAE | 18 M RMSE | 18 M MAPE |
 |----|------------------------------------------------------------------------------------------------|---------|----------|----------|----------|-----------|-----------|
-| 1 😊  | LightGBM                                                                                        | 5.90    | 8.25     | 19.64%   | 11.77    | 18.31     | 24.98%    |
-| 2 😊 | LSTM Hyper. Tuning Plus                                                                         | 5.96    | 9.38     | 18.64%   | 12.63    | 20.66     | 25.61%    |
-| 3 😊 | Prophet Adv. Engineering                                                                        | 6.21    | 8.75     | 20.61%   | 10.12    | 17.02     | 21.43%    |
-| 4 😊 | Advanced Prophet                                                                                | 6.24    | 8.78     | 20.77%   | 11.14    | 18.02     | 22.34%    |
-| 5 😊 | LSTM Rolling Mean Features                                                                      | 7.94    | 10.82    | 27.59%   | 12.33    | 20.57     | 24.67%    |
+| 1   | LightGBM                                                                                        | 5.90    | 8.25     | 19.64%   | 11.77    | 18.31     | 24.98%    |
+| 2   | LSTM Hyper. Tuning Plus                                                                         | 5.96    | 9.38     | 18.64%   | 12.63    | 20.66     | 25.61%    |
+| 3   | Prophet Adv. Engineering                                                                        | 6.21    | 8.75     | 20.61%   | 10.12    | 17.02     | 21.43%    |
+| 4   | Advanced Prophet                                                                                | 6.24    | 8.78     | 20.77%   | 11.14    | 18.02     | 22.34%    |
+| 5   | LSTM Rolling Mean Features                                                                      | 7.94    | 10.82    | 27.59%   | 12.33    | 20.57     | 24.67%    |
 
 These results underscore the effectiveness of combining feature engineering, hyperparameter tuning, and advanced machine learning techniques to improve water consumption forecasting accuracy. The models also demonstrated robust performance in the 18-month forecasts, showcasing their versatility across different forecasting horizons.
 
