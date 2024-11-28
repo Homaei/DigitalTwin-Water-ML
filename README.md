@@ -73,7 +73,7 @@ Below is a preview of the Digital Twin system diagram:
   - **Water Consumption Prediction**: AI and ML models, including **LSTM** and **Prophet**, are used for forecasting daily water usage.
   - **Leakage Detection**: Early detection of water leakages by analyzing consumption patterns.
   - **Energy Consumption and CO2 Footprint**: Monitoring the energy impact of water distribution and associated CO2 emissions (These parameters result from maintaining the water distribution network). For example, each operator has several tasks with a variety of time, location, priority, and other metrics, and the scheduling with preemption (Urgent tasks) is an NP-hard problem.
- ![image](https://github.com/user-attachments/assets/2139cd4d-e107-4197-abf5-494f3db7bacb)
+
 
 
 
@@ -251,6 +251,9 @@ These improvements illustrate the effectiveness of our model in reducing operati
 
 ### Visual Analysis
 
+ ![image](https://github.com/user-attachments/assets/2139cd4d-e107-4197-abf5-494f3db7bacb)
+
+ 
 Below are visual representations of key metrics analyzed in the model:
 
 ![Completion Time](src/Completion%20Time.png)
