@@ -89,6 +89,13 @@ These results underscore the effectiveness of combining feature engineering, hyp
 
 
 
+
+![FIG10-A-Prophet Model with Advanced Feature Engineering 6m](https://github.com/user-attachments/assets/79376d28-8b70-4b35-af8b-a9557cb700d8)
+
+
+![FIG10-B-Prophet Model with Advanced Feature Engineering 18m](https://github.com/user-attachments/assets/f2d7c49e-13db-4428-aa2b-9526ff639bf5)
+
+
 ## Digital Twin Diagram
 
 Below is a preview of the Digital Twin system diagram:
