@@ -46,55 +46,6 @@ We fine-tuned each model to optimize performance:
 - **LSTM Model**: Adjusted dropout rates, learning rates, sequence length, and layer units through grid and randomized search.
 - **Stacking Ensemble Methods**: Combined outputs from XGBoost and LightGBM models to increase robustness by capturing different aspects of the data.
 
-### Model Evaluation Metrics
-
-Each model was evaluated on the following metrics to identify top performers across 6-month and 18-month forecasting periods:
-
-1. **Mean Absolute Error (MAE)**: Average error magnitude in predictions.
-2. **Root Mean Squared Error (RMSE)**: Provides a higher penalty for large prediction errors.
-3. **Mean Absolute Percentage Error (MAPE)**: Standardized error measurement as a percentage for cross-model comparison.
-
-Based on these metrics, the best models for each forecasting period are presented in the following sections.
-
-
-
-| No | Model                                                                                          | 6 M MAE | 6 M RMSE | 6 M MAPE | 18 M MAE | 18 M RMSE | 18 M MAPE |
-|----|------------------------------------------------------------------------------------------------|---------|----------|----------|----------|-----------|-----------|
-| 1   | LightGBM                                                                                        | 5.90    | 8.25     | 19.64%   | 11.77    | 18.31     | 24.98%    |
-| 2   | LSTM Hyper. Tuning Plus                                                                         | 5.96    | 9.38     | 18.64%   | 12.63    | 20.66     | 25.61%    |
-| 3   | Prophet Adv. Engineering                                                                        | 6.21    | 8.75     | 20.61%   | 10.12    | 17.02     | 21.43%    |
-| 4   | Advanced Prophet                                                                                | 6.24    | 8.78     | 20.77%   | 11.14    | 18.02     | 22.34%    |
-| 5   | LSTM Rolling Mean Features                                                                      | 7.94    | 10.82    | 27.59%   | 12.33    | 20.57     | 24.67%    |
-
-These results underscore the effectiveness of combining feature engineering, hyperparameter tuning, and advanced machine learning techniques to improve water consumption forecasting accuracy. The models also demonstrated robust performance in the 18-month forecasts, showcasing their versatility across different forecasting horizons.
-
-
-| No | Model                                                                                          | 6 M MAE | 6 M RMSE | 6 M MAPE | 18 M MAE | 18 M RMSE | 18 M MAPE |
-|----|------------------------------------------------------------------------------------------------|---------|----------|----------|----------|-----------|-----------|
-| 1  | Prophet Basic                                                                                  | 10.37   | 13.66    | 22.45%   | 19.70    | 28.68     | 22.45%    |
-| 2  | Prophet + Seasonality                                                                           | 12.39   | 14.91    | 22.45%   | 24.25    | 35.02     | 22.45%    |
-| 3  | Advanced Prophet                                                                                | **6.24**    | **8.78**     | **20.77%**   | **11.14**    | **18.02**     | **22.34%**    |
-| 4  | **Prophet Adv. Engineering**                                                                    | **6.21**| **8.75** | **20.61%**| **10.12**| **17.02** | **21.43%**|
-| 5  | XGBoost                                                                                         | 7.02    | 8.74     | 24.93%   | 12.34    | 18.50     | 27.49%    |
-| 6  | **LightGBM**                                                                                    | **5.90**| **8.25** | **19.64%**| **11.77**| **18.31**     | **24.98%**    |
-| 7  | Stacking XGBoost + LightGBM                                                                     | 6.57    | 8.70     | 22.45%   | 12.48    | 18.94     | 27.62%    |
-| 8  | LSTM Network                                                                                    | 7.31    | 10.74    | 22.43%   | 16.03    | 22.16     | 39.95%    |
-| 9  | LSTM Hyperparameter Tuning                                                                      | 6.51    | 9.61     | 21.34%   | 12.72    | 20.61     | 26.47%    |
-| 10 | **LSTM Hyper. Tuning Plus**                                                                     | **5.96**| **9.38** | **18.64%**| **12.63**| **20.66**     | **25.61%**    |
-| 11 | LSTM Hyper. Tuning Changed Params                                                               | 6.52    | 9.63     | 21.38%   | 13.33    | 20.60     | 29.21%    |
-| 12 | LSTM + GRU Hybrid                                                                               | 8.18    | 10.10    | 30.10%   | 14.64    | 22.32     | 34.06%    |
-| 13 | **LSTM Rolling Mean Features**                                                                  | **7.94**| **10.82**    | **27.59%**| **12.33**| **20.57**     | **24.67%**    |
-
-
-
-
-Prophet model's results:
-
-![FIG10-A-Prophet Model with Advanced Feature Engineering 6m](https://github.com/user-attachments/assets/79376d28-8b70-4b35-af8b-a9557cb700d8)
-Figure 4:  Prophet Model with Advanced Feature Engineering 6 months forecasting
-
-![FIG10-B-Prophet Model with Advanced Feature Engineering 18m](https://github.com/user-attachments/assets/f2d7c49e-13db-4428-aa2b-9526ff639bf5)
-Figure 5:  Prophet Model with Advanced Feature Engineering 18 months forecasting
 
 
 ## Digital Twin Diagram
@@ -157,6 +108,56 @@ Below is a preview of the Digital Twin system diagram:
 |    |             | LightGBM with Feature Engineering| LightGBM with engineered features (e.g., lags, moving averages)                        |
 | 5  | Stacking    | Stacking XGBoost + LightGBM      | Ensemble of XGBoost and LightGBM, stacking the models                                  |
 ------------------------------------------------------------------------------------------------------------------------------------------------
+
+### Model Evaluation Metrics
+
+Each model was evaluated on the following metrics to identify top performers across 6-month and 18-month forecasting periods:
+
+1. **Mean Absolute Error (MAE)**: Average error magnitude in predictions.
+2. **Root Mean Squared Error (RMSE)**: Provides a higher penalty for large prediction errors.
+3. **Mean Absolute Percentage Error (MAPE)**: Standardized error measurement as a percentage for cross-model comparison.
+
+Based on these metrics, the best models for each forecasting period are presented in the following sections.
+
+
+
+| No | Model                                                                                          | 6 M MAE | 6 M RMSE | 6 M MAPE | 18 M MAE | 18 M RMSE | 18 M MAPE |
+|----|------------------------------------------------------------------------------------------------|---------|----------|----------|----------|-----------|-----------|
+| 1   | LightGBM                                                                                        | 5.90    | 8.25     | 19.64%   | 11.77    | 18.31     | 24.98%    |
+| 2   | LSTM Hyper. Tuning Plus                                                                         | 5.96    | 9.38     | 18.64%   | 12.63    | 20.66     | 25.61%    |
+| 3   | Prophet Adv. Engineering                                                                        | 6.21    | 8.75     | 20.61%   | 10.12    | 17.02     | 21.43%    |
+| 4   | Advanced Prophet                                                                                | 6.24    | 8.78     | 20.77%   | 11.14    | 18.02     | 22.34%    |
+| 5   | LSTM Rolling Mean Features                                                                      | 7.94    | 10.82    | 27.59%   | 12.33    | 20.57     | 24.67%    |
+
+These results underscore the effectiveness of combining feature engineering, hyperparameter tuning, and advanced machine learning techniques to improve water consumption forecasting accuracy. The models also demonstrated robust performance in the 18-month forecasts, showcasing their versatility across different forecasting horizons.
+
+
+| No | Model                                                                                          | 6 M MAE | 6 M RMSE | 6 M MAPE | 18 M MAE | 18 M RMSE | 18 M MAPE |
+|----|------------------------------------------------------------------------------------------------|---------|----------|----------|----------|-----------|-----------|
+| 1  | Prophet Basic                                                                                  | 10.37   | 13.66    | 22.45%   | 19.70    | 28.68     | 22.45%    |
+| 2  | Prophet + Seasonality                                                                           | 12.39   | 14.91    | 22.45%   | 24.25    | 35.02     | 22.45%    |
+| 3  | Advanced Prophet                                                                                | **6.24**    | **8.78**     | **20.77%**   | **11.14**    | **18.02**     | **22.34%**    |
+| 4  | **Prophet Adv. Engineering**                                                                    | **6.21**| **8.75** | **20.61%**| **10.12**| **17.02** | **21.43%**|
+| 5  | XGBoost                                                                                         | 7.02    | 8.74     | 24.93%   | 12.34    | 18.50     | 27.49%    |
+| 6  | **LightGBM**                                                                                    | **5.90**| **8.25** | **19.64%**| **11.77**| **18.31**     | **24.98%**    |
+| 7  | Stacking XGBoost + LightGBM                                                                     | 6.57    | 8.70     | 22.45%   | 12.48    | 18.94     | 27.62%    |
+| 8  | LSTM Network                                                                                    | 7.31    | 10.74    | 22.43%   | 16.03    | 22.16     | 39.95%    |
+| 9  | LSTM Hyperparameter Tuning                                                                      | 6.51    | 9.61     | 21.34%   | 12.72    | 20.61     | 26.47%    |
+| 10 | **LSTM Hyper. Tuning Plus**                                                                     | **5.96**| **9.38** | **18.64%**| **12.63**| **20.66**     | **25.61%**    |
+| 11 | LSTM Hyper. Tuning Changed Params                                                               | 6.52    | 9.63     | 21.38%   | 13.33    | 20.60     | 29.21%    |
+| 12 | LSTM + GRU Hybrid                                                                               | 8.18    | 10.10    | 30.10%   | 14.64    | 22.32     | 34.06%    |
+| 13 | **LSTM Rolling Mean Features**                                                                  | **7.94**| **10.82**    | **27.59%**| **12.33**| **20.57**     | **24.67%**    |
+
+
+
+
+Prophet model's results:
+
+![FIG10-A-Prophet Model with Advanced Feature Engineering 6m](https://github.com/user-attachments/assets/79376d28-8b70-4b35-af8b-a9557cb700d8)
+Figure 4:  Prophet Model with Advanced Feature Engineering 6 months forecasting
+
+![FIG10-B-Prophet Model with Advanced Feature Engineering 18m](https://github.com/user-attachments/assets/f2d7c49e-13db-4428-aa2b-9526ff639bf5)
+Figure 5:  Prophet Model with Advanced Feature Engineering 18 months forecasting
 
 
 # Water Distribution System (WDS) Maintenance Optimization
