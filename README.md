@@ -6,7 +6,7 @@ This project leverages **Digital Twin** technology, advanced **Machine Learning 
 
 ## Digital Twin in Water Industries
 
-[📄 View PDF: DT in Water Industries](src/DT%20in%20Water%20industries.pdf)
+[📄 View PDF: DT in Water Industries](src/DT%20in%20Water%20industries.webp)
 
 
 ### Digital Twin System
