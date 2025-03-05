@@ -9,7 +9,6 @@ This project leverages **Digital Twin** technology, advanced **Machine Learning 
 ![Digital Twin](src/DT%20in%20Water%20industries.webp)
 
 
-
 ### Digital Twin System
 
 Our **Digital Twin** setup collects data from multiple sources:
