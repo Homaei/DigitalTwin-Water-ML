@@ -298,7 +298,37 @@ Below are visual representations of key metrics analyzed in the model:
 ## Contributors
 
 - [Hubert Homaei](https://github.com/homaei), [Oscar Mogollon](https://github.com/omogollo2). 
-  
+
+
+## Citation
+📌 APA (7th Edition)
+arXiv version:
+
+Homaei, M., Di Bartolo, A. J., Ávila, M., Mogollón-Gutiérrez, Ó., & Caro, A. (2024). Digital transformation in the water distribution system based on the digital twins concept. arXiv. https://doi.org/10.48550/arXiv.2412.06694
+
+MDPI Preprints version:
+
+Homaei, M., Di Bartolo, A. J., Ávila, M., Mogollón-Gutiérrez, Ó., & Caro, A. (2024). Digital transformation in the water distribution system based on the digital twins concept. MDPI Preprints. https://doi.org/10.20944/preprints202412.0756.v1
+
+📌 IEEE
+arXiv version:
+
+[1] M. Homaei, A. J. Di Bartolo, M. Ávila, Ó. Mogollón-Gutiérrez, and A. Caro, “Digital transformation in the water distribution system based on the digital twins concept,” arXiv, 2024. [Online]. Available: https://doi.org/10.48550/arXiv.2412.06694.
+
+MDPI Preprints version:
+
+[2] M. Homaei, A. J. Di Bartolo, M. Ávila, Ó. Mogollón-Gutiérrez, and A. Caro, “Digital transformation in the water distribution system based on the digital twins concept,” MDPI Preprints, Dec. 2024. [Online]. Available: https://doi.org/10.20944/preprints202412.0756.v1.
+
+📌 Chicago (Author-Date)
+arXiv version:
+
+Homaei, MohammadHossein, Agustín Javier Di Bartolo, Mar Ávila, Óscar Mogollón-Gutiérrez, and Andrés Caro. 2024. “Digital Transformation in the Water Distribution System Based on the Digital Twins Concept.” arXiv. https://doi.org/10.48550/arXiv.2412.06694.
+
+MDPI Preprints version:
+
+Homaei, MohammadHossein, Agustín Javier Di Bartolo, Mar Ávila, Óscar Mogollón-Gutiérrez, and Andrés Caro. 2024. “Digital Transformation in the Water Distribution System Based on the Digital Twins Concept.” MDPI Preprints, December. https://doi.org/10.20944/preprints202412.0756.v1.
+
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
