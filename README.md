@@ -1,12 +1,11 @@
 # Water Consumption Forecasting Using Digital Twins and AI/ML
+## Digital Twin in Water Industries
+![Digital Twin](src/DT%20in%20Water%20industries.webp)
 
 ## Overview
 
 This project leverages **Digital Twin** technology, advanced **Machine Learning (ML)**, and **Artificial Intelligence (AI)** models to accurately forecast water consumption across multiple rural villages in Spain. We aim to support effective resource management, optimize infrastructure planning, and enhance sustainability by integrating real-time and historical data Digital Twins collects.
 
-## Digital Twin in Water Industries
-
-![Digital Twin](src/DT%20in%20Water%20industries.webp)
 
 
 ### Digital Twin System
