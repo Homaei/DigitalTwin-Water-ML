@@ -300,7 +300,8 @@ Below are visual representations of key metrics analyzed in the model:
 - [Hubert Homaei](https://github.com/homaei), [Oscar Mogollon](https://github.com/omogollo2). 
 
 
-## Citation
+## How to cite to this research:
+
 📌 APA (7th Edition)
 arXiv version:
 
